@@ -1,0 +1,5 @@
+{
+  "name": "Profyle AI - Somali Engine",
+  "description": "An advanced AI engine for generating professional profile branding (Bio, Summary, Impact) and performing fact-checking with Google Search grounding. Supports PDF and Document export.",
+  "requestFramePermissions": []
+}
