@@ -1,7 +1,17 @@
+export interface ProjectHighlight {
+  title: string;
+  description: string;
+}
+
 export interface BrandingResult {
-  summary: string;
-  bio: string;
-  impact: string[];
+  executiveSummary: string; // Renamed from summary
+  professionalBio: string;  // New: longer, detailed bio
+  keyAchievements: string[]; // Renamed from impact
+  coreExpertise: string[];  // New: list of expertise/skills
+  professionalPhilosophy: string; // New: professional philosophy/values
+  visionAndOutlook: string; // New: vision and future goals
+  projectHighlights: ProjectHighlight[]; // New: array of project highlights
+  language: 'en' | 'ar' | 'so'; 
 }
 
 export interface FactCheckSource {
