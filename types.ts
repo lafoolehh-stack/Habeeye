@@ -36,3 +36,12 @@ export enum Tab {
   BRANDING = 'BRANDING',
   FACT_CHECK = 'FACT_CHECK'
 }
+
+export interface ArchivedDossier {
+  registryId: string;
+  createdAt: number;
+  searchName: string;
+  searchTitle: string;
+  profileImage: string | null;
+  brandingResult: BrandingResult;
+}

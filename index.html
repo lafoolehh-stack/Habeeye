@@ -3,14 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profyle AI</title>
+    <title>SomaliPin - Archive Dossier AI</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
     <style>
+      :root {
+        --dossier-bg: #FCF9F4;
+        --dossier-dark: #0F172A;
+      }
       body {
         font-family: 'Inter', sans-serif;
-        background-color: #f8fafc;
+        background-color: #f1f5f9;
+      }
+      .font-serif {
+        font-family: 'Playfair Display', serif;
+      }
+      .bg-dossier {
+        background-color: var(--dossier-bg);
+      }
+      .text-dossier-dark {
+        color: var(--dossier-dark);
       }
       /* Custom Scrollbar */
       ::-webkit-scrollbar {

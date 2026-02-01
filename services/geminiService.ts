@@ -234,7 +234,8 @@ export const performFactCheck = async (text: string): Promise<FactCheckResult> =
   const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
   try {
     const response = await ai.models.generateContent({
-      model: 'gemini-2.5-flash',
+      // FIX: Updated model to a recommended model for search grounding.
+      model: 'gemini-3-flash-preview',
       contents: `Fact check this text: \n\n${text}`,
       config: { systemInstruction: FACT_CHECK_SYSTEM_INSTRUCTION, tools: [{ googleSearch: {} }] }
     });
